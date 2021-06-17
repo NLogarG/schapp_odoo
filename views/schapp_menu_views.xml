@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Top menu item -->
+    <!--
+        This menu item's purpose is to overwrite another one defined in
+        the base module in order to set new groups.
+    -->
+    <menuitem
+        id="schapp_root"
+        name="Schapp"
+        web_icon="schapp,static/description/icon.png"
+        />
+</odoo>

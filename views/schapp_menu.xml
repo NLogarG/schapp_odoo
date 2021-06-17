@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+    <record id="schapp_ticket_acton" model="ir.actions.act_window">
+        <field name="name">Creacion de profesores/alumnos</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">schapp.ticket</field>
+        <field name="view_mode">tree,pivot,form,graph</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Ningun profesor/alumno registrado
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="schapp_menu_root" name="Inicio" sequence="10"/>
+    <menuitem id="schapp_menu_submenu" name="Schapp" sequence="10" parent="schapp_menu_root"/>
+    <menuitem id="schapp_menu_action" name="Schapp Registro" sequence="10" parent="schapp_menu_submenu" action="schapp_ticket_acton"/>
+</odoo>
